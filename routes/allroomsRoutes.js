@@ -4,7 +4,7 @@ const router = new Router()
 var all_rooms = ['room 1', 'room 2', 'my room', 'system room']
 
 router.get('/', (req, res) => {
-    res.status(200).json([all_rooms, 200])
+    res.status(200).json([...all_rooms, 200])
 })
 
 router.post('/', (req, res) => {
